@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "titre": "Le Palais du Chocolat",
+    "desc": "Site vitrine élégant et gourmand conçu pour mettre en valeur l’univers du chocolatier. On y retrouve une présentation des spécialités artisanales, quelques produits phares, des avis clients rassurants ainsi que les bénéfices pour les visiteurs : qualité des ingrédients, savoir-faire artisanal et expérience authentique. Le site a pour objectif de renforcer l’image de marque et d’attirer de nouveaux clients, sans fonctionnalité de boutique en ligne.",
+    "date": "2026",
+    "duree":"2 jours",
+    "type":"Front-End Development",
+    "tag":["HTML","CSS","JS"],
+    "image":"assets/palaisduchoc.png",
+    "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
+    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier."
+  }
+]
