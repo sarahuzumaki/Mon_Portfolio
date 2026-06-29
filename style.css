@@ -26,6 +26,13 @@ h2{
     font-size: 100px;
     color: #D7D9CC;
 }
+h3{
+  font-family: "Bebas Neue", sans-serif;
+}
+h4{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+}
 p{
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
@@ -137,6 +144,13 @@ font-size: 32px;
 .pb-16{
     padding-bottom: 16px;
 }
+.pt-64{
+    padding-top: 64px;
+}
+.pb-64{
+    padding-bottom: 64px;
+}
+
 .pt-128{
     padding-top: 128px;
 }
@@ -394,6 +408,10 @@ border: #D3E74B 1px solid;
 padding: 8px 16px;
 display: inline-block;
 }
+.btn-secondary:hover{
+  background-color: #D3E74B;
+  color: #161616;
+}
 .btn-filiaire{
 font-family: "DM Sans", sans-serif;
 color: #161616;
@@ -406,7 +424,10 @@ display: inline-block;
 background-color: #D3E74B;
 border: solid 1px #D3E74B
 }
-
+#btn-linkedin:hover{
+    background-color: #D7D9CC;
+    color: #161616;
+}
 .tag{
     padding: 8px 16px;
     color: #D7D9CC;
