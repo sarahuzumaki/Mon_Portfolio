@@ -50,7 +50,7 @@ fetch("data.json")
                             <h3>${projet.titre}</h3>
                             <div class="bento-hover">
                                 <p>${cutText(projet.desc)}</p>
-                                <a href="projet.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
+                                <a href="project.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ fetch("data.json")
                             <h3>${projet.titre}</h3>
                             <div class="bento-hover">
                                 <p>${cutText(projet.desc)}</p>
-                                <a href="projet.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
+                                <a href="project.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
                             </div>
                         </div>
                     </div>
@@ -80,3 +80,4 @@ fetch("data.json")
         }
     });
 }
+

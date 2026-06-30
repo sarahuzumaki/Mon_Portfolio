@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nom du projet - Portfolio Sarah Bendriss</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scriptproject.js" defer></script>
 </head>
+
 <body>
-    
+    <main>
+        <!-- SECTION HERO -->
+        <section class="hero bg-green">
+            <div class="container-1200 flex align-center">
+                <div class="w-50">
+                    <h1 id="titre"></h1>
+                    <br class="mt-32 mb-32 separation">
+                    <div class="flex space-between">
+                        <div>
+                            <p class="uppercase">Client</p>
+                            <p id="client"></p>
+                        </div>
+                        <div>
+                            <p class="uppercase">Année</p>
+                            <p id="date"></p>
+                        </div>
+                        <div>
+                            <p class="uppercase">Durée</p>
+                            <p id="duree"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION PRINCIPALE -->
+        <section class="bg-beige pt-128 pb-128">
+            <div class="container-1200">
+
+            </div>
+        </section>
+        <!-- SECTION PROJET SUIVANT -->
+        <section class="bg-suivant pt-64 pb-64">
+            <div class="container-1200 flex space-between">
+                <div class="w-50">
+                    <p class="beige">PROJET SUIVANT</p>
+                    <p id="projetsuivant" ></p>
+                </div>
+                <a href="" class="btn-suivant"><i class="ph ph-arrow-right"></i></a>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black pt-64 pb-64">
+        <div class="container-1200 flex space-between align-center">
+            <div class="w-48">
+                <p class="contact">CONTACTEZ-MOI</p>
+                <p class="grey dmsans mt-32">Toujours curieuse d'apprendre et de relever de nouveaux défis.</p>
+                <div class="flex gap-16 mt-32">
+                    <a href="https://www.linkedin.com/in/sarah-bendriss/" target="_blank" class="btn-primary"
+                        id="btn-linkedin">LINKEDIN <i class="ph ph-arrow-up-right ml-8"></i></a>
+                    <a href="" class="btn-secondary">GITHUB <i class="ph ph-arrow-up-right ml-8"></i></a>
+                </div>
+            </div>
+            <div class="w-48 flex align-center justify-end">
+                <p class="beige dmsans uppercase">©2026 - Conçu et développé par sarah</p>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

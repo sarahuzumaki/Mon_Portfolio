@@ -39,7 +39,7 @@ h4{
 p{
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
-    color: #161616;
+    color: #181818;
 }
 header{
     padding: 16px 32px;
@@ -52,7 +52,7 @@ header{
 header nav a{
     position: relative;
     padding-bottom: 6px;
-    color: #161616;
+    color: #202020;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -76,7 +76,7 @@ header nav a:hover::after{
 color: #D3E74B;
 }
 #logo{
-color: #161616;
+color: #181818;
 font-family: "Bebas Neue", sans-serif;
 font-size: 32px;
 }
@@ -97,6 +97,11 @@ font-size: 32px;
   color: #D7D9CC;
   font-family: "Bebas Neue", sans-serif;
   font-size: 55px;
+}
+#projetsuivant{
+   color: #D7D9CC;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
 }
 .dmsans{
       font-family: "DM Sans", sans-serif;
@@ -422,13 +427,16 @@ margin-right: auto;
     background-color: #FCF9F2;
 }
 .bg-black{
-    background-color: #161616;
+    background-color: #181818;
+}
+.bg-suivant .flex {
+    align-items: center;
 }
 .green{
     color: #4B5D3C;
 }
 .black{
-    color: #161616;
+    color: #181818;
 }
 .beige{
     color: #FCF9F2;
@@ -446,17 +454,17 @@ margin-right: auto;
 .btn-primary{
 background-color: #D3E74B;
 font-family: "DM Sans", sans-serif;
-color: #161616;
+color: #181818;
 border-radius: 1px;
 padding: 8px 16px;
 display: inline-block;
 }
 .btn-primary:hover{
-background-color: #161616;
+background-color: #181818;
 color: #D3E74B;
 }
 .btn-secondary{
-background-color: #161616;
+background-color: #181818;
 font-family: "DM Sans", sans-serif;
 color: #D3E74B;
 border-radius: 1px;
@@ -466,13 +474,13 @@ display: inline-block;
 }
 .btn-secondary:hover{
   background-color: #D3E74B;
-  color: #161616;
+  color: #181818;
 }
 .btn-filiaire{
 font-family: "DM Sans", sans-serif;
-color: #161616;
+color: #181818;
 border-radius: 1px;
-border: solid 1px #161616;
+border: solid 1px #181818;
 padding: 8px 16px;
 display: inline-block;
  font-weight: 500;
@@ -483,7 +491,16 @@ border: solid 1px #D3E74B
 }
 #btn-linkedin:hover{
     background-color: #D7D9CC;
-    color: #161616;
+    color: #181818;
+}
+.btn-suivant{
+  color: #D7D9CC;
+  border: #D7D9CC solid 1px;
+  border-radius: 1px;
+  background-color: transparent;
+ padding: 14px 18px 11px 19px;
+  font-size: 32px;
+  display: inline-block;
 }
 .view-project{
   color: #D3E74B;
@@ -598,4 +615,67 @@ border: solid 1px #D3E74B
     .bento-small{
         width: 100%;
     }
+}
+
+.bg-suivant {
+  position: relative;
+  overflow: hidden;
+  background: black;
+  transition: color 0.5s ease;
+}
+
+/* couche de remplissage */
+.bg-suivant::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #D3E74B;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+/* animation hover */
+.bg-suivant:hover::before {
+  transform: scaleY(1);
+}
+
+/* contenu au-dessus du fond */
+.bg-suivant .container-1200 {
+  position: relative;
+  z-index: 1;
+}
+
+/* TEXTE */
+.bg-suivant,
+.bg-suivant p {
+  color: #D7D9CC;
+  transition: color 0.4s ease;
+}
+
+.bg-suivant:hover,
+.bg-suivant:hover p {
+  color: black;
+}
+
+/* bouton */
+.btn-suivant {
+  color: #D7D9CC;
+  border: #D7D9CC solid 1px;
+  border-radius: 1px;
+  background-color: transparent;
+  padding: 14px 18px 11px 19px;
+  font-size: 32px;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.bg-suivant:hover .btn-suivant {
+  color: black;
+  border-color: black;
+}
+.bg-suivant:hover #projetsuivant {
+  color: black;
+  border-color: black;
 }

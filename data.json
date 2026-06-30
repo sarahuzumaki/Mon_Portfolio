@@ -9,7 +9,8 @@
     "tag":["UI/UX"],
     "image":"assets/tremplin.png",
     "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier."
+    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
+    "client":"Projet perso"
   },
   {
     "id": "2",
@@ -21,7 +22,8 @@
     "tag":["HTML","CSS","JS"],
     "image":"assets/palaisduchocolat.png",
     "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier."
+    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
+    "client":"Projet perso"
   },
   {
     "id": "1",
@@ -33,6 +35,7 @@
     "tag":["UI/UX"],
     "image":"assets/miam.png",
     "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier."
+    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
+    "client":"Projet perso"
   }
 ]
