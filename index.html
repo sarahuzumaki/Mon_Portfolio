@@ -32,7 +32,7 @@
 
     <main>
         <!-- HERO -->
-        <section class="bg-green hero">
+        <section class="bg-green hero relative">
             <div class="container-1200 flex align-center">
                 <div class="barre"></div>
                 <div class="ml-16">
@@ -46,43 +46,71 @@
             </div>
         </section>
         <!-- SECTION PROJETS -->
-        <section class="bg-beige pt-64 pb-64">
+        <section class="bg-beige pt-128 pb-128">
             <div class="container-1200">
-                <h2>PROJETS</h2>
-                <!-- Les projets / bento -->
-                <div class="flex">
-                    <!-- dernier projet-->
-                    <div class="bento">
-                        <div class="flex">
-                            <div class="contenubento">
-                                <h3>TITRE</h3>
-                                <p>description</p>
-                                <p class="lemon">VIEW PROJECT <i class="ph ph-arrow-right ml-8"></i></p>
-                            </div>
-                            <div class="">
-                                <p class="tag">HTML</p>
-                                <p class="tag">CSS</p>
-                                <p class="tag">JS</p>
-                            </div>
-                        </div>
+                <h2 class="mb-64">PROJETS</h2>
+
+                <div id="projets-container" class="flex gap mt-32">
+
+                    <!-- DERNIER PROJET 
+            <div class="bento bento-large large-12 bg-black">
+                <img src="chemin-vers-mockup.jpg" alt="Refonte e-commerce" class="bento-bg">
+                <div class="bento-content">
+                    <div class="bento-tags">
+                        <p class="tag">HTML</p>
+                        <p class="tag">CSS</p>
+                        <p class="tag">JS</p>
                     </div>
-                </div>
-                <!-- Autres projets -->
-                <div class="bento">
-                    <div class="contenubento">
-                        <div>
-                            <p class="tag">Figma</p>
-                            <p class="tag">UI/UX</p>
+                    <div class="bento-texte">
+                        <h3>REFONTE E-COMMERCE</h3>
+                        <div class="bento-hover">
+                            <p>Une refonte complète de la vitrine e-commerce d'une marque de streetwear axée sur les performances et l'expérience mobile-first.</p>
+                            <a href="#" class="lemon">VIEW PROJECT <i class="ph ph-arrow-right ml-8"></i></a>
                         </div>
-                        <h3>TITRE</h3>
-                        <p>description</p>
-                        <p class="lemon">VIEW PROJECT <i class="ph ph-arrow-right ml-8"></i></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- SECTION ABOUT ME -->
-        <section class="bg-green pt-64 pb-64">
+            </div> -->
+
+                    <!-- AUTRES PROJETS 
+            <div class="bento bento-small large-6 bg-black">
+                <img src="chemin-vers-mockup2.jpg" alt="UI tableau de bord" class="bento-bg">
+                <div class="bento-content">
+                    <div class="bento-tags">
+                        <p class="tag">FIGMA</p>
+                        <p class="tag">UI/UX</p>
+                    </div>
+                    <div class="bento-texte">
+                        <h3>UI TABLEAU DE BORD</h3>
+                        <div class="bento-hover">
+                            <p>Interface de tableau de bord analytique pour la clarté et la consultation rapide des données.</p>
+                            <a href="#" class="lemon">VIEW PROJECT <i class="ph ph-arrow-right ml-8"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento bento-small large-6 bg-black">
+                <img src="chemin-vers-mockup3.jpg" alt="Portfolio v1" class="bento-bg">
+                <div class="bento-content">
+                    <div class="bento-tags">
+                        <p class="tag">REACT</p>
+                        <p class="tag">TAILWIND</p>
+                    </div>
+                    <div class="bento-texte">
+                        <h3>PORTFOLIO V1</h3>
+                        <div class="bento-hover">
+                            <p>Mon précédent portfolio de développeuse créative explorant les interactions WebGL.</p>
+                            <a href="#" class="lemon">VIEW PROJECT <i class="ph ph-arrow-right ml-8"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+                </div>
+        </section> <!-- SECTION ABOUT ME -->
+        <section class="bg-green pt-128 pb-128">
             <div class="container-1200 flex space-between align-center">
                 <h2 class="w-50">QUI SUIS-JE</h3>
                     <p class="w-50 beige">Fraîchement diplômée d'une formation intensive de 4 mois, je recherche
@@ -92,7 +120,7 @@
             </div>
         </section>
         <!-- SECTION COMPETENCES -->
-        <section class="bg-beige pt-64 pb-64">
+        <section class="bg-beige pt-128 pb-128">
             <div class="container-1200">
                 <h2 class="uppercase">compétences</h2>
                 <div class=" separation mt-64"></div>
@@ -124,15 +152,21 @@
     </main>
 
     <footer class="bg-black pt-64 pb-64">
-        <div class="container-1200">
-            <p>CONTACTEZ-MOI</p>
-            <p></p>
-            <div class="flex gap-16">
-                <a href="" class="btn-primary" id="btn-linkedin">LINKEDIN <i class="ph ph-arrow-up-right ml-8"></i></a>
-                <a href="" class="btn-secondary">GITHUB <i class="ph ph-arrow-up-right ml-8"></i></a>
+        <div class="container-1200 flex space-between">
+            <div class="w-48">
+                <p class="contact">CONTACTEZ-MOI</p>
+                <p class="grey dmsans mt-32">Toujours curieuse d'apprendre et de relever de nouveaux défis.</p>
+                <div class="flex gap-16 mt-32">
+                    <a href="" class="btn-primary" id="btn-linkedin">LINKEDIN <i
+                            class="ph ph-arrow-up-right ml-8"></i></a>
+                    <a href="" class="btn-secondary">GITHUB <i class="ph ph-arrow-up-right ml-8"></i></a>
+                </div>
+            </div>
+            <div class="w-48 flex align-center justify-end">
+                <p class="beige dmsans uppercase">©2026 - Conçu et développé par sarah</p>
             </div>
         </div>
-
+<p class="initiales">SB</p>
     </footer>
 </body>
 

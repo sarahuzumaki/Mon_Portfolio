@@ -15,7 +15,9 @@
     box-sizing: border-box; 
     text-decoration: none;
 }
-
+body{
+    overflow-x: hidden;
+}
 h1{
     font-family: "Bebas Neue", sans-serif;
     font-size: 120px;
@@ -52,6 +54,8 @@ header nav a{
     padding-bottom: 6px;
     color: #161616;
     font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 header nav a::after{
@@ -89,7 +93,22 @@ font-size: 32px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 38px;
 }
-
+.contact{
+  color: #D7D9CC;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 55px;
+}
+.dmsans{
+      font-family: "DM Sans", sans-serif;
+}
+.initiales{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 500px;
+  color: #5c6d4e;
+  position: absolute;
+  top:13%;
+  right: -5%;
+}
 /*----------------------------------
              FLEX BOX
 -----------------------------------*/
@@ -106,6 +125,9 @@ font-size: 32px;
 }
 .justify-center{
     justify-content: center;
+}
+.justify-end{
+    justify-content: end;
 }
 .gap{
     gap:var(--gap);
@@ -125,6 +147,9 @@ font-size: 32px;
          MARGIN ET PADDING
 -----------------------------------*/
 
+.mt-8{
+    margin-top: 8px;
+}
 .mt-16{
     margin-top: 16px;
 }
@@ -138,10 +163,10 @@ font-size: 32px;
     margin-bottom: 32px;
 }
 .mt-64{
-    margin-top: 32px;
+    margin-top: 64px;
 }
 .mb-64{
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 .mt-16{
     margin-top: 16px;
@@ -160,6 +185,9 @@ font-size: 32px;
 }
 .pb-64{
     padding-bottom: 64px;
+}
+.pb-128{
+    padding-bottom: 128px;
 }
 
 .pt-128{
@@ -404,6 +432,9 @@ margin-right: auto;
 .white{
     color: #fff;
 }
+.grey{
+  color: gray;
+}
 /*----------------------------------
               BOUTONS
 -----------------------------------*/
@@ -439,6 +470,7 @@ border-radius: 1px;
 border: solid 1px #161616;
 padding: 8px 16px;
 display: inline-block;
+ font-weight: 500;
 }
 .btn-filiaire:hover{
 background-color: #D3E74B;
@@ -448,6 +480,10 @@ border: solid 1px #D3E74B
     background-color: #D7D9CC;
     color: #161616;
 }
+.view-project{
+  color: #D3E74B;
+  font-family: "DM Sans", sans-serif;
+}
 .tag{
     padding: 8px 16px;
     color: #D7D9CC;
@@ -456,22 +492,44 @@ border: solid 1px #D3E74B
     border: #4B5D3C 1px solid;
     display: inline;
 }
-
+.relative{
+  position: relative;
+}
+/*----------------------------------
+            BENTO PROJETS
+-----------------------------------*/
 .bento{
     position: relative;
-    height: 300px;
     overflow: hidden;
     border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
 }
-   
 
-.bento img{
+.bento-large{
+    height: 600px;
+}
+
+.bento-small{
+    height: 380px;
+}
+
+.bento-bg{
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    display: block;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform .6s ease;
 }
+
+.bento:hover .bento-bg{
+    transform: scale(1.08);
+}
+
 .bento::after{
     content: "";
     position: absolute;
@@ -481,12 +539,58 @@ border: solid 1px #D3E74B
     pointer-events: none;
 }
 
-.bento p{
-    height: 0px;
-    overflow: hidden;
-    transition: height .5s ease;
+.bento-content{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.bento:hover p{
-    height: 64px;
+.bento-tags{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+.bento-tags .tag{
+    font-size: 12px;
+    padding: 4px 12px;
+}
+
+.bento h3{
+    color: #FCF9F2;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.bento-hover{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+}
+.bento:hover .bento-hover{
+    max-height: 140px;
+}
+
+.bento-texte p{
+    color: #D7D9CC;
+    max-width: 500px;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.bento p.lemon{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+@media all and (max-width: 800px){
+    .bento-small{
+        width: 100%;
+    }
 }
