@@ -103,11 +103,13 @@ font-size: 32px;
 }
 .initiales{
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(150px, 35vw, 500px);
+  font-size: clamp(200px, 30vw, 600px);
   color: #5c6d4e;
   position: absolute;
-  top: 80px;
-  right: -5%;
+  bottom: -5%;
+  right: -3%;
+  line-height: 0.8;
+  z-index: 0;
 }
 /*----------------------------------
              FLEX BOX
@@ -390,8 +392,10 @@ max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 }
-.hero {
+.hero{
     height: 90vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .hero .container-1200 {
