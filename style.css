@@ -30,8 +30,9 @@ h3{
   font-family: "Bebas Neue", sans-serif;
 }
 h4{
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #4B5D3C;
 }
 p{
     font-family: "DM Sans", sans-serif;
@@ -84,6 +85,10 @@ font-size: 32px;
 .uppercase{
     text-transform: uppercase;
 }
+.skill{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 38px;
+}
 
 /*----------------------------------
              FLEX BOX
@@ -130,6 +135,12 @@ font-size: 32px;
     margin-top: 32px;
 }
 .mb-32{
+    margin-bottom: 32px;
+}
+.mt-64{
+    margin-top: 32px;
+}
+.mb-64{
     margin-bottom: 32px;
 }
 .mt-16{
@@ -351,13 +362,22 @@ max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 }
-.hero{
+.hero {
     height: 90vh;
+}
+
+.hero .container-1200 {
+    height: 100%;
 }
 .barre{
     width: 1px;
     height: 250px;
     background-color: #D3E74B;
+}
+.separation{
+  width: 100%;
+  height: 1px;
+  background-color: #4b5d3c4b;
 }
 /*----------------------------------
             COULEURS
