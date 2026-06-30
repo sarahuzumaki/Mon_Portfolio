@@ -103,10 +103,10 @@ font-size: 32px;
 }
 .initiales{
   font-family: "Bebas Neue", sans-serif;
-  font-size: 500px;
+  font-size: clamp(150px, 35vw, 500px);
   color: #5c6d4e;
   position: absolute;
-  top:13%;
+  top: 13%;
   right: -5%;
 }
 /*----------------------------------
