@@ -16,25 +16,35 @@
 </head>
 
 <body>
+    <header class="flex space-between align-center">
+        <a href="index.html" id="logo" class="w-30">Sarah.PORTFOLIO</a>
+        <div class="flex w-70 gap-16 align-center">
+            <nav class="flex gap-16 w-70">
+                <a href="index.html" class="liennav">Accueil</a>
+                <a href="" class="liennav">Projets</a>
+            </nav>
+            <a href="#footer" class="btn-filiaire">Contact</a>
+        </div>
+    </header>
     <main>
         <!-- SECTION HERO -->
         <section class="hero bg-green">
             <div class="container-1200 flex align-center">
-                <div class="w-50">
+                <div class="w-80">
                     <h1 id="titre"></h1>
-                    <br class="mt-32 mb-32 separation">
-                    <div class="flex space-between">
+                    <div class="mt-32 mb-32 separation-texte"></div>
+                    <div class="flex gap-64">
                         <div>
-                            <p class="uppercase">Client</p>
-                            <p id="client"></p>
+                            <p class="uppercase titre-infos-hero">Client</p>
+                            <p id="client" class="beige mt-16 fs-24"></p>
                         </div>
                         <div>
-                            <p class="uppercase">Année</p>
-                            <p id="date"></p>
+                            <p class="uppercase titre-infos-hero">Année</p>
+                            <p id="date" class="beige mt-16 fs-24"></p>
                         </div>
                         <div>
-                            <p class="uppercase">Durée</p>
-                            <p id="duree"></p>
+                            <p class="uppercase titre-infos-hero">Durée</p>
+                            <p id="duree" class="beige mt-16 fs-24"> </p>
                         </div>
                     </div>
                 </div>
@@ -43,30 +53,85 @@
         <!-- SECTION PRINCIPALE -->
         <section class="bg-beige pt-128 pb-128">
             <div class="container-1200">
+<!-- DESCRIPTION -->
+ <div id="description">
 
+<h5>DESCRIPTION</h5>
+<p id="description-text" class="mt-32 fs-19"></p>
+
+ </div>
+                <!-- Challenge -->
+                <div id="challenge" class="flex space-between mt-128">
+
+                    <div class="w-48">
+                        <h5>LE CHALLENGE</h5>
+
+                        <p id="challenge-text" class="mt-32 fs-19"></p>
+
+                        <p class="techniques uppercase mt-64 fs-19">
+                            compétences utilisées
+                        </p>
+
+                        <div class="separation-techniques mt-16"></div>
+
+                        <div id="competences" class="mt-32 flex gap-16"></div>
+                    </div>
+
+                    <div class="w-48">
+                        <div class="mockup-container">
+                            <img id="img-challenge" src="assets/miam.png" alt="Mockup">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Solution -->
+                <div id="solution" class="flex space-between mt-128">
+
+                    <div class="w-48">
+                        <div class="mockup-container">
+                            <img id="img-solution" src="assets/miam.png" alt="Mockup">
+                        </div>
+                    </div>
+
+                    <div class="w-48">
+                        <h5>LA SOLUTION</h5>
+
+                        <p id="solution-text" class="mt-32 fs-19"></p>
+                    </div>
+
+                </div>
+
+                <a href="" id="btn-visite" class="btn-primary mt-64">
+                    VISITER LE SITE
+                    <i class="ph ph-arrow-up-right ml-8"></i>
+                </a>
+<div id="prototype-container"></div>
             </div>
+            
         </section>
         <!-- SECTION PROJET SUIVANT -->
         <section class="bg-suivant pt-64 pb-64">
             <div class="container-1200 flex space-between">
                 <div class="w-50">
                     <p class="beige">PROJET SUIVANT</p>
-                    <p id="projetsuivant" ></p>
+                    <p id="projetsuivant"></p>
                 </div>
                 <a href="" class="btn-suivant"><i class="ph ph-arrow-right"></i></a>
 
             </div>
         </section>
     </main>
-    <footer class="bg-black pt-64 pb-64">
-        <div class="container-1200 flex space-between align-center">
+    <footer class="bg-black pt-64 pb-64" id="footer">
+        <div class="container-1200 flex space-between">
             <div class="w-48">
                 <p class="contact">CONTACTEZ-MOI</p>
                 <p class="grey dmsans mt-32">Toujours curieuse d'apprendre et de relever de nouveaux défis.</p>
                 <div class="flex gap-16 mt-32">
                     <a href="https://www.linkedin.com/in/sarah-bendriss/" target="_blank" class="btn-primary"
                         id="btn-linkedin">LINKEDIN <i class="ph ph-arrow-up-right ml-8"></i></a>
-                    <a href="" class="btn-secondary">GITHUB <i class="ph ph-arrow-up-right ml-8"></i></a>
+                    <a href="https://github.com/sarahuzumaki" class="btn-secondary" target="_blank">GITHUB <i
+                            class="ph ph-arrow-up-right ml-8"></i></a>
                 </div>
             </div>
             <div class="w-48 flex align-center justify-end">

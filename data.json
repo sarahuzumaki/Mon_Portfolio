@@ -2,40 +2,62 @@
   {
     "id": "3",
     "titre": "Tremplin",
-    "desc": "Site vitrine élégant et gourmand conçu pour mettre en valeur l’univers du chocolatier. On y retrouve une présentation des spécialités artisanales, quelques produits phares, des avis clients rassurants ainsi que les bénéfices pour les visiteurs : qualité des ingrédients, savoir-faire artisanal et expérience authentique. Le site a pour objectif de renforcer l’image de marque et d’attirer de nouveaux clients, sans fonctionnalité de boutique en ligne.",
+    "desc": "Tremplin est une application pensée pour accompagner les personnes en situation de précarité dans leur quotidien. Elle centralise des informations utiles et accessibles sur les aides disponibles, les services sociaux, ainsi que les activités gratuites ou à faible coût proposées autour de l’utilisateur. L’objectif est de réduire la charge mentale liée à la recherche d’informations et de permettre un accès plus simple à des solutions concrètes. L’application met l’accent sur la clarté, la simplicité d’usage et l’inclusion numérique afin de s’adapter à des publics parfois éloignés des outils digitaux.",
     "date": "2026",
-    "duree":"1 mois",
-    "type":"UI/UX",
-    "tag":["UI/UX"],
-    "image":"assets/tremplin.png",
-    "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
-    "client":"Projet perso"
+    "duree": "1 mois",
+    "type": "UI/UX",
+    "tag": [
+      "UI/UX",
+      "Figma"
+    ],
+    "image": "assets/tremplin.png",
+    "imagechallenge": "assets/tremplinchallenge.png",
+    "imagesolution": "assets/tremplinsolution.png",
+    "challenge": "Le principal défi a été de concevoir une interface qui rende des informations administratives et sociales complexes facilement compréhensibles et accessibles. Il fallait également prendre en compte un public potentiellement stressé, peu à l’aise avec le numérique, ou en recherche rapide de solutions concrètes. L’enjeu était donc de structurer les contenus de manière logique tout en évitant une surcharge d’informations, afin de garantir une navigation fluide et rassurante.",
+    "solutions": "Une approche centrée sur la simplicité et la hiérarchisation de l’information a été adoptée. Les contenus sont organisés par catégories claires (aides, activités, services) et présentés de manière progressive pour éviter toute surcharge cognitive. L’interface utilise des éléments visuels sobres, des textes courts et une navigation intuitive afin de guider l’utilisateur rapidement vers les informations essentielles. L’ensemble vise à créer une expérience rassurante, accessible et efficace.",
+    "client": "Projet perso",
+    "lien": "https://la-toile-emlyon.github.io/p3-ste-2026-s2-LeJeanSH/",
+    "prototype": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/oqCfDO1GyQjgI3kgwvlSvV/Groupe-1-Raïs-Jean-Akram-Sarah?node-id=217-1855&scaling=scale-down"
   },
   {
     "id": "2",
     "titre": "Le Palais du Chocolat",
     "desc": "Site vitrine élégant et gourmand conçu pour mettre en valeur l’univers du chocolatier. On y retrouve une présentation des spécialités artisanales, quelques produits phares, des avis clients rassurants ainsi que les bénéfices pour les visiteurs : qualité des ingrédients, savoir-faire artisanal et expérience authentique. Le site a pour objectif de renforcer l’image de marque et d’attirer de nouveaux clients, sans fonctionnalité de boutique en ligne.",
     "date": "2026",
-    "duree":"2 jours",
-    "type":"Front-End Development",
-    "tag":["HTML","CSS","JS"],
-    "image":"assets/palaisduchocolat.png",
-    "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
-    "client":"Projet perso"
+    "duree": "2 jours",
+    "type": "Front-End Development",
+    "tag": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "image": "assets/palaisduchocolat.png",
+    "imagechallenge": "assets/palaisduchocolatchallenge.png",
+    "imagesolution": "assets/palaisduchocolatsolution.png",
+    "challenge": "Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
+    "solutions": "Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
+    "client": "Projet perso",
+    "lien": "https://sarahuzumaki.github.io/PalaisDuChocolat-BENDRISS-Sarah/",
+    "prototype": ""
   },
   {
     "id": "1",
     "titre": "Miam",
-    "desc": "Site vitrine élégant et gourmand conçu pour mettre en valeur l’univers du chocolatier. On y retrouve une présentation des spécialités artisanales, quelques produits phares, des avis clients rassurants ainsi que les bénéfices pour les visiteurs : qualité des ingrédients, savoir-faire artisanal et expérience authentique. Le site a pour objectif de renforcer l’image de marque et d’attirer de nouveaux clients, sans fonctionnalité de boutique en ligne.",
+    "desc": "Miam est une application destinée aux étudiants et jeunes en situation de difficulté financière ou d’autonomie, leur permettant de trouver facilement des recettes simples, rapides et économiques. L’application propose des idées de repas adaptées aux ingrédients disponibles, avec une option de localisation des commerces à proximité pour compléter les courses si nécessaire. L’objectif est de faciliter le quotidien alimentaire en combinant inspiration culinaire, accessibilité et praticité.",
     "date": "2026",
-    "duree":"2 semaines",
-    "type":"UI/UX",
-    "tag":["UI/UX"],
-    "image":"assets/miam.png",
-    "challenge":"Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
-    "solutions":"Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
-    "client":"Projet perso"
+    "duree": "2 semaines",
+    "type": "UI/UX",
+    "tag": [
+      "UI/UX",
+      "Figma"
+    ],
+    "image": "assets/miam.png",
+    "imagechallenge": "assets/miamchallenge.png",
+    "imagesolution": "assets/miamsolution.png",
+    "challenge": "Le principal défi a été de combiner deux besoins essentiels dans une seule expérience fluide : la recherche de recettes simples et la localisation de commerces à proximité. Il fallait également prendre en compte des utilisateurs avec peu de temps, peu de moyens ou peu d’expérience en cuisine, tout en garantissant une interface rapide, intuitive et sans friction.",
+    "solutions": "Une interface qui donne envie mais orientée action a été conçue pour permettre une recherche rapide de recettes selon les ingrédients disponibles ou les besoins du moment. Un système de suggestion aide l’utilisateur à trouver des idées adaptées sans effort. En parallèle, une fonctionnalité de géolocalisation permet d’identifier les commerces proches pour compléter facilement les courses. L’ensemble vise à rendre la cuisine accessible, même avec peu de ressources.",
+    "client": "Projet perso",
+    "lien": "",
+    "prototype": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/oqCfDO1GyQjgI3kgwvlSvV/Groupe-1-Raïs-Jean-Akram-Sarah?node-id=217-1855&scaling=scale-down"
   }
 ]

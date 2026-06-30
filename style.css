@@ -36,6 +36,11 @@ h4{
   font-size: 20px;
   color: #4B5D3C;
 }
+h5{
+   font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    color: #181818;
+}
 p{
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
@@ -98,6 +103,17 @@ font-size: 32px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 55px;
 }
+.titre-infos-hero{
+  color: #D7D9CC;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.fs-19{
+  font-size: 19px;
+}
 #projetsuivant{
    color: #D7D9CC;
   font-family: "Bebas Neue", sans-serif;
@@ -105,6 +121,9 @@ font-size: 32px;
 }
 .dmsans{
       font-family: "DM Sans", sans-serif;
+}
+.bebasneue{
+    font-family: "Bebas Neue", sans-serif;
 }
 .initiales{
   font-family: "Bebas Neue", sans-serif;
@@ -149,6 +168,13 @@ font-size: 32px;
 }
 .gap-32{
     gap: 32px;
+}
+
+.gap-64{
+    gap: 64px;
+}
+.gap-128{
+    gap: 128px;
 }
 
 /*----------------------------------
@@ -375,6 +401,9 @@ les resolutions d'ecrans d'apres un petit script sass*/
 .w-100{
     width: 100%;
 }
+.w-80{
+    width: 80%;
+}
 .w-50{
     width: 50%;
 }
@@ -416,6 +445,16 @@ margin-right: auto;
   width: 100%;
   height: 1px;
   background-color: #4b5d3c4b;
+}
+.separation-texte{
+  width: 100%;
+  height: 1px;
+  background-color: #D7D9CC;
+}
+.separation-techniques{
+  width: 80%;
+  height: 1px;
+  background-color: #181818;
 }
 /*----------------------------------
             COULEURS
@@ -488,6 +527,15 @@ display: inline-block;
 .btn-filiaire:hover{
 background-color: #D3E74B;
 border: solid 1px #D3E74B
+}
+.btn-competences{
+font-family: "DM Sans", sans-serif;
+color: #181818;
+border-radius: 1px;
+border: solid 1px #181818;
+padding: 8px 16px;
+display: inline-block;
+ font-weight: 500;
 }
 #btn-linkedin:hover{
     background-color: #D7D9CC;
@@ -678,4 +726,19 @@ border: solid 1px #D3E74B
 .bg-suivant:hover #projetsuivant {
   color: black;
   border-color: black;
+}
+
+.mockup-container{
+    background-color: #181818; 
+    height: 500px;   
+    border-radius: 3px;         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
