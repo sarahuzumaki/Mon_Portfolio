@@ -106,8 +106,9 @@ font-size: 32px;
   font-size: clamp(200px, 30vw, 600px);
   color: #5c6d4e;
   position: absolute;
-  bottom: -5%;
-  right: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5%;
   line-height: 0.8;
   z-index: 0;
 }
@@ -395,11 +396,11 @@ margin-right: auto;
 .hero{
     height: 90vh;
     overflow: hidden;
-    position: relative;
 }
 
 .hero .container-1200 {
     height: 100%;
+    position: relative;
 }
 .barre{
     width: 1px;
