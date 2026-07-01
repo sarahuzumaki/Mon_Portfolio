@@ -742,3 +742,14 @@ display: inline-block;
     height: auto;
     display: block;
 }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px) scale(.98);
+    transition: all .8s cubic-bezier(.22,1,.36,1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
