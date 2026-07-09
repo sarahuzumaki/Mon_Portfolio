@@ -1,6 +1,29 @@
 [
-  {
-    "id": "3",
+   {
+  "id": "5",
+  "titre": "Satellite",
+"desc": "Satellite est une application mobile de gestion de projet pensée pour les chefs de projet qui jonglent entre plusieurs outils au quotidien. L'application centralise le suivi des tâches, la détection des incidents et la coordination d'équipe autour d'un tableau de bord unique, avec pour objectif de permettre à l'utilisateur de repérer les problèmes en temps réel et de mobiliser rapidement la bonne personne pour les résoudre. Ce projet a remporté le Prix du Jury lors d'un hackathon organisé par l'EM Lyon Business School, devant un jury composé de 8 professionnels.",
+  "date": "2026",
+  "duree": "2 jours",
+  "type": "UI/UX",
+  "tag": [
+    "UI/UX",
+    "Figma"
+  ],
+  "image": "assets/satellite.png",
+  "imagechallenge": "assets/satellitechallenge.png",
+  "imagesolution": "assets/satellitesolution.png",
+  "challenge": "Le principal défi de ce projet a été de concevoir une application capable de rendre visible, en un seul coup d'œil, l'état de santé d'un projet complexe : répartition des tâches par pôle (front-end, back-end, UI/UX), incidents en cours et disponibilité de l'équipe. Il fallait aussi repenser le persona et la problématique en cours de route pour s'assurer que chaque écran du prototype réponde concrètement à un besoin réel de l'utilisatrice cible, sans multiplier les fonctionnalités superflues.",
+  "solutions": "Le prototype s'articule autour d'un tableau de bord central avec une visualisation radar de la charge de travail par pôle, d'un module de suivi des incidents catégorisés et filtrables, d'une création de tâche rapide avec système de priorité visuel (flammes) et assignation à un ou plusieurs membres, ainsi que de notifications en temps réel liant la résolution des tâches à la clôture des incidents. L'ensemble permet à l'utilisatrice de passer d'un problème détecté à une solution assignée en quelques secondes, sans changer d'application.",
+  "client": "Projet étudiant",
+  "lien": "",
+  "prototype":"https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Z0VPq0NlfODVWZZ2bF0SBl/Hackathon---Groupe-1-%22Satellite%22--Florentin--Ra%C3%AFs--Sarah--Margaux--Irvin?node-id=116-343&starting-point-node-id=116-1855&scaling=scale-down",
+  "recompense": "🏆 Prix du Jury – Hackathon 2026"
+  
+  
+},
+   {
+    "id": "4",
     "titre": "Tremplin",
     "desc": "Tremplin est une application pensée pour accompagner les personnes en situation de précarité dans leur quotidien. Elle centralise des informations utiles et accessibles sur les aides disponibles, les services sociaux, ainsi que les activités gratuites ou à faible coût proposées autour de l’utilisateur. L’objectif est de réduire la charge mentale liée à la recherche d’informations et de permettre un accès plus simple à des solutions concrètes. L’application met l’accent sur la clarté, la simplicité d’usage et l’inclusion numérique afin de s’adapter à des publics parfois éloignés des outils digitaux.",
     "date": "2026",
@@ -15,9 +38,28 @@
     "imagesolution": "assets/tremplinsolution.png",
     "challenge": "Le principal défi a été de concevoir une interface qui rende des informations administratives et sociales complexes facilement compréhensibles et accessibles. Il fallait également prendre en compte un public potentiellement stressé, peu à l’aise avec le numérique, ou en recherche rapide de solutions concrètes. L’enjeu était donc de structurer les contenus de manière logique tout en évitant une surcharge d’informations, afin de garantir une navigation fluide et rassurante.",
     "solutions": "Une approche centrée sur la simplicité et la hiérarchisation de l’information a été adoptée. Les contenus sont organisés par catégories claires (aides, activités, services) et présentés de manière progressive pour éviter toute surcharge cognitive. L’interface utilise des éléments visuels sobres, des textes courts et une navigation intuitive afin de guider l’utilisateur rapidement vers les informations essentielles. L’ensemble vise à créer une expérience rassurante, accessible et efficace.",
-    "client": "Projet perso",
+    "client": "Projet étudiant",
     "lien": "https://la-toile-emlyon.github.io/p3-ste-2026-s2-LeJeanSH/",
     "prototype": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/oqCfDO1GyQjgI3kgwvlSvV/Groupe-1-Raïs-Jean-Akram-Sarah?node-id=217-1855&scaling=scale-down"
+  },
+  {
+    "id": "3",
+  "titre": "Le Registre Officiel",
+  "desc": "Ce projet est un site fictif et satirique présentant un « registre officiel des objets à importance visuelle excessive » : badges sans accès, carnets vides, câbles mystérieux… Chaque objet est noté selon son « autorité perçue » et son « utilité réelle », avec des critères d'évaluation absurdes comme la présence passive ou la complexité silencieuse. Il s'agissait avant tout d'un exercice pédagogique pour découvrir et prendre en main un CMS, tout en explorant un ton humoristique et un univers visuel décalé.",
+  "date": "2026",
+  "duree": "1 jour",
+  "type": "Front-End Development",
+  "tag": [
+    "CMS"
+  ],
+  "image": "assets/leregistreofficiel.png",
+  "imagechallenge": "assets/leregistreofficielchallenge.png",
+  "imagesolution": "assets/leregistreofficielsolution.png",
+  "challenge": "Le principal défi de ce projet a été de prendre en main un CMS pour la première fois, en comprenant sa logique de collections et de champs dynamiques plutôt qu'une structure de page classique. Il fallait également réussir à transposer un concept humoristique et absurde en une identité visuelle crédible, presque institutionnelle, pour renforcer l'effet comique du décalage entre le ton pseudo-officiel du contenu et la futilité des objets présentés. Trouver le bon équilibre entre sérieux apparent et dérision a demandé plusieurs itérations.",
+  "solutions": "Le site a été construit autour d'une collection CMS regroupant les différents « objets certifiés », chacun avec sa propre fiche comportant une image, un nom, une description et des indicateurs chiffrés fictifs. Cette structure a permis d'apprendre à créer et lier des champs dynamiques, puis à les afficher automatiquement sur la page d'archive. Sur le plan visuel, un ton graphique sobre et institutionnel a été choisi pour accentuer le contraste avec l'absurdité du propos, renforçant ainsi l'humour du projet tout en consolidant la prise en main des fonctionnalités du CMS.",
+  "client": "Projet étudiant",
+  "lien": "https://les-objets-qui-ont-lair-plus-importants.webflow.io/",
+  "prototype": ""
   },
   {
     "id": "2",
@@ -36,7 +78,7 @@
     "imagesolution": "assets/palaisduchocolatsolution.png",
     "challenge": "Le principal défi a été de créer un site élégant et gourmand tout en restant clair et facile à naviguer. Il fallait également mettre en valeur les produits et les avis clients sans intégrer de boutique en ligne.",
     "solutions": "Une interface sobre et raffinée a été conçue avec une mise en avant visuelle des produits, des sections bien organisées et des avis clients visibles pour renforcer la confiance et l’image artisanale du chocolatier.",
-    "client": "Projet perso",
+    "client": "Projet étudiant",
     "lien": "https://sarahuzumaki.github.io/PalaisDuChocolat-BENDRISS-Sarah/",
     "prototype": ""
   },
@@ -56,7 +98,7 @@
     "imagesolution": "assets/miamsolution.png",
     "challenge": "Le principal défi a été de combiner deux besoins essentiels dans une seule expérience fluide : la recherche de recettes simples et la localisation de commerces à proximité. Il fallait également prendre en compte des utilisateurs avec peu de temps, peu de moyens ou peu d’expérience en cuisine, tout en garantissant une interface rapide, intuitive et sans friction.",
     "solutions": "Une interface qui donne envie mais orientée action a été conçue pour permettre une recherche rapide de recettes selon les ingrédients disponibles ou les besoins du moment. Un système de suggestion aide l’utilisateur à trouver des idées adaptées sans effort. En parallèle, une fonctionnalité de géolocalisation permet d’identifier les commerces proches pour compléter facilement les courses. L’ensemble vise à rendre la cuisine accessible, même avec peu de ressources.",
-    "client": "Projet perso",
+    "client": "Projet étudiant",
     "lien": "",
     "prototype": "https://embed.figma.com/proto/hSWDkTbyMgyMtNj9niKJWQ/UI-UX-Samuel---Ra%C3%AFs---Sarah?node-id=6178-1921&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=6178%3A1921&show-proto-sidebar=1&embed-host=share"
   }

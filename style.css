@@ -20,12 +20,12 @@ body{
 }
 h1{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 120px;
+    font-size: clamp(48px, 10vw, 120px);
     color: #FCF9F2;
 }
 h2{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px);
     color: #D7D9CC;
 }
 h3{
@@ -37,8 +37,8 @@ h4{
   color: #4B5D3C;
 }
 h5{
-   font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(36px, 7vw, 80px);
     color: #181818;
 }
 p{
@@ -101,7 +101,7 @@ font-size: 32px;
 .contact{
   color: #D7D9CC;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 55px;
+  font-size: clamp(32px, 7vw, 55px);
 }
 .titre-infos-hero{
   color: #D7D9CC;
@@ -117,7 +117,7 @@ font-size: 32px;
 #projetsuivant{
    color: #D7D9CC;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 64px;
+  font-size: clamp(36px, 8vw, 64px);
 }
 .dmsans{
       font-family: "DM Sans", sans-serif;
@@ -752,4 +752,228 @@ display: inline-block;
 .reveal.active {
     opacity: 1;
     transform: translateY(0) scale(1);
+}
+.badge-recompense{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #FFD700;
+    background-color: rgba(255, 215, 0, 0.08);
+    border: 1px solid #FFD700;
+    padding: 8px 16px;
+    border-radius: 1px;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.badge-recompense .trophee{
+    font-size: 20px;
+}
+.bento-badge{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 3;
+    font-size: 32px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+/*----------------------------------
+            RESPONSIVE
+-----------------------------------*/
+
+@media all and (max-width: 800px){
+
+    /* CONTAINER */
+    .container-1200{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* COLONNES GÉNÉRIQUES (about me, footer, hero projet) */
+    .w-48, .w-50, .w-80{
+        width: 100%;
+    }
+
+    /* ESPACEMENTS */
+    .pt-128{ padding-top: 64px; }
+    .pb-128{ padding-bottom: 64px; }
+    .mt-128{ margin-top: 64px; }
+    .gap-64{ gap: 24px; }
+    .gap-128{ gap: 48px; }
+
+    /* HEADER */
+    header{
+        flex-wrap: wrap;
+        row-gap: 12px;
+        padding: 16px 20px;
+    }
+    header #logo{
+        width: auto;
+        font-size: 20px;
+    }
+    header > div{
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    header nav{
+        width: auto;
+        gap: 12px;
+    }
+    header nav a{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    header .btn-filiaire{
+        padding: 6px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* HERO ACCUEIL */
+    .hero{
+        height: auto;
+        min-height: 70vh;
+        padding: 140px 0 60px;
+    }
+    .hero .container-1200.flex.align-center{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .barre{
+        display: none;
+    }
+
+    /* SECTION COMPÉTENCES (accueil) — garde les 3 colonnes côte à côte */
+    .flex.space-between.mt-64{
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+    .column{
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .skill{
+        font-size: clamp(18px, 4.5vw, 28px);
+    }
+    h4{
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    footer .container-1200.flex.space-between{
+        flex-direction: column;
+        gap: 32px;
+    }
+    footer .justify-end{
+        justify-content: flex-start;
+    }
+
+    /* BENTO PROJETS (accueil) */
+    .bento-large{ height: 420px; }
+    .bento-small{ height: 320px; }
+    .bento-hover{
+        max-height: none;
+    }
+
+    /* PAGE PROJET : challenge / solution empilés + image en premier */
+    #challenge, #solution{
+        gap: 32px;
+        flex-direction: column;
+    }
+    #challenge .w-48:nth-child(1){
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    #challenge .w-48:nth-child(2){
+        order: 1;
+    }
+    #solution .w-48:nth-child(1){
+        order: 1;
+    }
+    #solution .w-48:nth-child(2){
+        order: 2;
+    }
+
+    /* Fait remonter les compétences au-dessus du titre/texte, dans leur bloc */
+    #challenge .w-48:nth-child(1) #competences{
+        order: -1;
+    }
+    #challenge .w-48:nth-child(1) .techniques,
+    #challenge .w-48:nth-child(1) .separation-techniques{
+        display: none;
+    }
+    #competences{
+        flex-wrap: wrap;
+        margin-bottom: 24px !important;
+    }
+
+    /* MOCKUPS PAGE PROJET */
+    .mockup-container{
+        height: 320px;
+    }
+
+    /* PROTOTYPE FIGMA */
+    #prototype-container iframe{
+        height: 400px !important;
+    }
+}
+
+@media all and (max-width: 500px){
+
+    header #logo{
+        font-size: 18px;
+    }
+    header nav{
+        gap: 8px;
+    }
+    header nav a{
+        font-size: 11px;
+    }
+    header nav a:nth-child(3){
+        display: none;
+    }
+    header .btn-filiaire{
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .flex.space-between.mt-64{
+        gap: 8px;
+    }
+    .column{
+        padding: 0 2px;
+    }
+    .skill{
+    font-size: clamp(15px, 4vw, 20px);
+}
+h4{
+    font-size: 12px;
+}
+
+    .bento-large{ height: 340px; }
+    .bento-small{ height: 280px; }
+    .bento h3{ font-size: 28px; }
+    .bento-content{ padding: 20px; }
+    .bento-badge{
+        font-size: 24px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .mockup-container{
+        height: 220px;
+    }
+    #prototype-container iframe{
+        height: 300px !important;
+    }
+
+    .initiales{
+        display: none;
+    }
 }

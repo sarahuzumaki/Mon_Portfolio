@@ -29,6 +29,18 @@ function afficheHeroProjet(projets) {
     document.querySelector("#client").textContent = projet.client;
     // bonus pour le nom du doc
     document.title = `${projet.titre} | Portfolio Sarah Bendriss`;
+
+    // 👉 Badge récompense (affiché uniquement si le champ existe)
+    const titreEl = document.querySelector("#titre");
+    const badgeExistant = document.querySelector(".badge-recompense");
+    if (badgeExistant) badgeExistant.remove(); // évite les doublons si navigation SPA
+
+    if (projet.recompense && projet.recompense.trim() !== "") {
+        const badge = document.createElement("div");
+        badge.classList.add("badge-recompense");
+        badge.textContent = projet.recompense;
+        titreEl.insertAdjacentElement("beforebegin", badge);
+    }
 }
 function afficheProjetSuivant(projets) {
     let urlActuelle = new URLSearchParams(window.location.search);
@@ -107,6 +119,55 @@ function afficheContenu(projets) {
         `;
     }
 }
+
+// 👉 Réorganisation responsive du DOM (n'affecte que l'affichage, pas le HTML source)
+(function () {
+    const challengeSection = document.querySelector('#challenge');
+    if (!challengeSection) return; // sécurité si la section n'existe pas sur cette page
+
+    const textBlock = challengeSection.querySelector('.w-48:nth-child(1)');
+    const imageBlock = challengeSection.querySelector('.w-48:nth-child(2)');
+
+    const techniquesTitle = textBlock.querySelector('.techniques');
+    const separation = textBlock.querySelector('.separation-techniques');
+    const competences = textBlock.querySelector('#competences');
+
+    // Marqueurs invisibles pour retrouver la position d'origine exacte (desktop)
+    const markerTechniques = document.createComment('marker-techniques');
+    techniquesTitle.parentNode.insertBefore(markerTechniques, techniquesTitle);
+
+    const markerImageBlock = document.createComment('marker-image-block');
+    challengeSection.insertBefore(markerImageBlock, imageBlock);
+
+    const mq = window.matchMedia('(max-width: 800px)');
+
+    function applyMobileLayout() {
+        // Ordre mobile : compétences -> image -> texte du challenge
+        challengeSection.insertBefore(techniquesTitle, challengeSection.firstChild);
+        challengeSection.insertBefore(separation, techniquesTitle.nextSibling);
+        challengeSection.insertBefore(competences, separation.nextSibling);
+        challengeSection.insertBefore(imageBlock, competences.nextSibling);
+    }
+
+    function applyDesktopLayout() {
+        // Remet tout exactement à sa place d'origine
+        markerTechniques.parentNode.insertBefore(techniquesTitle, markerTechniques.nextSibling);
+        techniquesTitle.parentNode.insertBefore(separation, techniquesTitle.nextSibling);
+        techniquesTitle.parentNode.insertBefore(competences, separation.nextSibling);
+        markerImageBlock.parentNode.insertBefore(imageBlock, markerImageBlock);
+    }
+
+    function handleChange(e) {
+        if (e.matches) {
+            applyMobileLayout();
+        } else {
+            applyDesktopLayout();
+        }
+    }
+
+    handleChange(mq); // application au chargement
+    mq.addEventListener('change', handleChange); // réagit si on redimensionne la fenêtre
+})();
 
 const reveals = document.querySelectorAll(".reveal");
 

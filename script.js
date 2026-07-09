@@ -37,10 +37,15 @@ fetch("data.json")
     projetsAffiches.forEach((projet, index) => {
         let tagsHTML = projet.tag.map(tag => `<p class="tag">${tag}</p>`).join('');
 
+         // Badge récompense — affiché seulement si le champ existe
+        let badgeHTML = (projet.recompense && projet.recompense.trim() !== "")
+    ? `<div class="bento-badge" title="${projet.recompense}">🏆</div>`
+    : '';
+
         if (index === 0) {
             // Le projet le plus récent : grand bento en haut
             let grandProjet = `
-                <div class="bento bento-large large-12 bg-black">
+                <div class="bento bento-large large-12 bg-black">${badgeHTML}
                     <img src="${projet.image}" alt="${projet.titre}" class="bento-bg">
                     <div class="bento-content">
                         <div class="bento-tags">
@@ -60,7 +65,7 @@ fetch("data.json")
         } else {
             // Les autres projets : petits bento, 2 par ligne
             let petitProjet = `
-                <div class="bento bento-small large-6 bg-black">
+                <div class="bento bento-small large-6 bg-black">${badgeHTML}
                     <img src="${projet.image}" alt="${projet.titre}" class="bento-bg">
                     <div class="bento-content">
                         <div class="bento-tags">
