@@ -574,6 +574,7 @@ display: inline-block;
     border-radius: 3px;
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
 }
 
 .bento-large{
@@ -805,33 +806,37 @@ display: inline-block;
     .gap-128{ gap: 48px; }
 
     /* HEADER */
-    header{
-        flex-wrap: wrap;
-        row-gap: 12px;
-        padding: 16px 20px;
-    }
-    header #logo{
-        width: auto;
-        font-size: 20px;
-    }
-    header > div{
-        width: 100%;
-        justify-content: space-between;
-        gap: 8px;
-    }
-    header nav{
-        width: auto;
-        gap: 12px;
-    }
-    header nav a{
-        font-size: 13px;
-        white-space: nowrap;
-    }
-    header .btn-filiaire{
-        padding: 6px 12px;
-        font-size: 13px;
-        white-space: nowrap;
-    }
+header{
+    flex-wrap: nowrap;
+    padding: 12px 16px;
+}
+header #logo{
+    width: auto;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+header > div{
+    width: auto;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+header nav{
+    width: auto;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+header nav a{
+    font-size: 11px;
+    white-space: nowrap;
+}
+header .btn-filiaire{
+    padding: 5px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
 
     /* HERO ACCUEIL */
     .hero{

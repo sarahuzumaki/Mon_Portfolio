@@ -37,15 +37,13 @@ fetch("data.json")
     projetsAffiches.forEach((projet, index) => {
         let tagsHTML = projet.tag.map(tag => `<p class="tag">${tag}</p>`).join('');
 
-         // Badge récompense — affiché seulement si le champ existe
         let badgeHTML = (projet.recompense && projet.recompense.trim() !== "")
-    ? `<div class="bento-badge" title="${projet.recompense}">🏆</div>`
-    : '';
+            ? `<div class="bento-badge" title="${projet.recompense}">🏆</div>`
+            : '';
 
         if (index === 0) {
-            // Le projet le plus récent : grand bento en haut
             let grandProjet = `
-                <div class="bento bento-large large-12 bg-black">${badgeHTML}
+                <a href="project.html?id=${projet.id}" class="bento bento-large large-12 bg-black">${badgeHTML}
                     <img src="${projet.image}" alt="${projet.titre}" class="bento-bg">
                     <div class="bento-content">
                         <div class="bento-tags">
@@ -55,17 +53,16 @@ fetch("data.json")
                             <h3>${projet.titre}</h3>
                             <div class="bento-hover">
                                 <p>${cutText(projet.desc)}</p>
-                                <a href="project.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
+                                <span class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             `;
             document.querySelector("#projets-container").innerHTML += grandProjet;
         } else {
-            // Les autres projets : petits bento, 2 par ligne
             let petitProjet = `
-                <div class="bento bento-small large-6 bg-black">${badgeHTML}
+                <a href="project.html?id=${projet.id}" class="bento bento-small large-6 bg-black">${badgeHTML}
                     <img src="${projet.image}" alt="${projet.titre}" class="bento-bg">
                     <div class="bento-content">
                         <div class="bento-tags">
@@ -75,11 +72,11 @@ fetch("data.json")
                             <h3>${projet.titre}</h3>
                             <div class="bento-hover">
                                 <p>${cutText(projet.desc)}</p>
-                                <a href="project.html?id=${projet.id}" class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></a>
+                                <span class="view-project">VOIR PROJET <i class="ph ph-arrow-right ml-8"></i></span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             `;
             document.querySelector("#projets-container").innerHTML += petitProjet;
         }
